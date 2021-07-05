@@ -23,8 +23,6 @@ public class LoginController {
 		int a = 1;
 		logger.info("Welcome home! The client locale is {}.", a);
 		
-		
-		
 		return "login";
 	}
 	

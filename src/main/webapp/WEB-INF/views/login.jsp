@@ -13,9 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<style type = "text/css">
-		.my_box{border:10px solid; margin: 80px 0px 0px 100px; padding:10px; width: 700px; height: 600px; float:left; background-color:pink;}
-		.my_box2{border:10px solid; margin: 30px 0px 0px 983px; padding:10px; width: 700px; height: 100px; float:left;background-color:pink;} /*float는 div를 가로 정렬할때 사용한다*/ 
-		.MainImage{width: 40%; height:30%; float:left; margin: 220px 0px 0px 200px;}
+		.my_box{border-radius: 30px; margin: 80px 0px 0px 100px; padding:10px; width: 700px; height: 600px; float:left;}
+		.my_box2{border-radius: 30px; margin: 30px 0px 0px 913px; padding:10px; width: 700px; height: 100px; float:left;} /*float는 div를 가로 정렬할때 사용한다*/ 
+		.MainImage{width: 40%; height:30%; float:left; margin: 220px 0px 0px 130px;}
 		#main_title{margin: 30px 0px 10px 200px; font-size:60px;}
 		#email{margin: 10px 30px 30px 150px;}
 		#password{margin: 10px 30px 30px 150px;}
@@ -25,24 +25,24 @@
 		<title>Login</title>
 	</head>
 	<body>
-		<img class=MainImage src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/13f9/image/KkU5BOM1ZYXfk-lX3UKJR3zUsvU.jpg">
+		<img class=MainImage src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/13f9/image/KkU5BOM1ZYXfk-lX3UKJR3zUsvU.jpg" style="border-radius:30px">
 		
-		<div class="my_box">
-			
+		<div class="my_box container-fluid">			
 			<h1 id="main_title" class="font-weight-bold">자취 식단</h1>
 			<br>
-			<input type="text" id="email" name="name" size=45 placeholder="이메일을 입력하세요" style="margin-bottom:20px; height:50px;">
-			<input type="text" id="password" name="name" size=45 placeholder="비밀번호를 입력하세요" style="margin-bottom:20px; height:50px;">
+			<input type="text" class="form-control" id="email" name="name" size=45 placeholder="이메일을 입력하세요" style="margin-bottom:20px; height:50px; width:375px; border:2px solid;">
+			<input type="text" class="form-control" id="password" name="name" size=45 placeholder="비밀번호를 입력하세요" style="margin-bottom:20px; height:50px; width:375px; border:2px solid;">
 			<br>
-			<span style="margin-right:150px"></span>
-			<button it="login" class="btn btn-primary"type="button" style="margin-bottom:20px; height:50px; width:375px"> 로그인 </button>
+			
+			<button id="login" class="btn btn-primary"type="button" style="margin-bottom:20px; height:50px; width:375px"> 로그인 </button>
 			<hr style="width: 400px">
 			<a id="password_search" href="">비밀번호 찾기</a>
 		</div>
 		<div class="MainNext" style="clear:both"> <!-- clear:both는 위에서 설정한 float설정을 해제한것이다. -->
 		
 		<div class="my_box2">
-			<h1 style="margin-bottom:15px"></h1>
+			<h1 style="margin-bottom:20px"></h1>
+			<hr style="width: 400px">
 			<span class="font-weight-bold" style="margin:0px 30px 0px 180px; font-size:20px">당신의 식사를 공유하세요~</span>
 			<a href="" style="font-size:20px">가입하기</a>
 		</div>
