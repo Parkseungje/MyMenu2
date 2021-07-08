@@ -27,14 +27,14 @@
 	<body>
 		<img class=MainImage src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/13f9/image/KkU5BOM1ZYXfk-lX3UKJR3zUsvU.jpg" style="border-radius:30px">
 		
+		<form>
 		<div class="my_box container-fluid">			
 			<h1 id="main_title" class="font-weight-bold">자취 식단</h1>
 			<br>
 			<input type="text" class="form-control" id="email" name="name" size=45 placeholder="이메일을 입력하세요" style="margin-bottom:20px; height:50px; width:375px; border:2px solid;">
 			<input type="text" class="form-control" id="password" name="name" size=45 placeholder="비밀번호를 입력하세요" style="margin-bottom:20px; height:50px; width:375px; border:2px solid;">
 			<br>
-			
-			<button id="login" class="btn btn-primary"type="button" style="margin-bottom:20px; height:50px; width:375px"> 로그인 </button>
+			<input type="submit" id="login" class="btn btn-info" value="로그인" style="margin-bottom:20px; height:50px; width:375px">
 			<hr style="width: 400px">
 			<a id="password_search" href="">비밀번호 찾기</a>
 		</div>
@@ -44,9 +44,10 @@
 			<h1 style="margin-bottom:20px"></h1>
 			<hr style="width: 400px">
 			<span class="font-weight-bold" style="margin:0px 30px 0px 180px; font-size:20px">당신의 식사를 공유하세요~</span>
-			<a href="" style="font-size:20px">가입하기</a>
+			<a href="signup" style="font-size:20px">가입하기</a>
 		</div>
 		</div>
+		</form>
 	</body>
 	
 	<!-- CDN주소로 부트스트랩 자바스크립트, jquery -->
